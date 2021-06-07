@@ -1,0 +1,39 @@
+<html>
+    <head>
+      <title>Hand Gesture Web App</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <script src="main.js"></script>
+        <div class="container">
+          <center>
+        <h3 class="btn btn-info heading">Hand Gesture Web App<br>
+          <span>&#128076;</span>
+          <span>&#128077;</span>
+          <span>&#9996;</span>
+          </h3>
+          <br><br>
+          <div class="col-md-4 col-sm-12 col-xs-12" id="WV"><label>Webcam View</label></div>
+          <div class="col-md-4 col-sm-12 col-xs-12 HG">
+            <label>Hand Gesture </label>
+            <p class="HG" id="Gesture"></p>
+            <p class="HandG" id="Hgesture"></p>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12" id="CI">
+            <label>Captured Image</label>
+            <br><br>
+            <button onclick="Rsnap()" class="btn btn-success ">Predict Gesture</button>
+          </div>    
+        </center>
+        </div>
+    </body>
+    </html>
+  
